@@ -29,7 +29,6 @@ function Experience() {
     <div className="experience component__space" id="experience">
       <div className="experiece_bg">
         <div className="experience-bg-overlay"></div>
-
         <div className="experience-container">
           <div className="experience-header">
             <h1 className="heading"> Career Timeline</h1>

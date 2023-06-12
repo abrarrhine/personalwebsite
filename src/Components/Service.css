@@ -6,6 +6,17 @@ h1.heading{
     margin-bottom: 10px;
 }
 
+.projects_bg{
+    background-image: url(../img/projects_bg.jpg); 
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
 p.heading.p__color{
     margin-bottom: 0;
     text-align: center;
