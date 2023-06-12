@@ -11,6 +11,7 @@ import tf_cert from "../img/tensorflow_cert_logo.png";
 import mlcertvalid from "../img/mlcertvalid.pdf";
 import devcertvalid from "../img/devcertvalid.pdf";
 import Footer from "./Footer";
+import Particlesbg from "./Particlejs"; 
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         <div className="welcome-overlay"></div>
         {/* HOME CONTENT*/}
         <div className="container pixhundred">
+          <Particlesbg></Particlesbg>
           <div>
             <img src={pic} className="suitpic" alt="Profile Photo"></img>
           </div>

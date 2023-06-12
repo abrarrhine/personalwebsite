@@ -4,7 +4,7 @@ img.about__img{
 }
 
 .aboutme-welcome-overlay{
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;

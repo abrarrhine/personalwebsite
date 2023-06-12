@@ -30,13 +30,9 @@ function Experience() {
       <div className="experiece_bg">
         <div className="experience-bg-overlay"></div>
 
-        <div className="container">
-          <div className="heading">
-            <h1 className="heading sweet"> Experience</h1>
-            <p className="heading p__color">
-              {" "}
-              <strong>Eat Sleep Code Repeat</strong>
-            </p>
+        <div className="experience-container">
+          <div className="experience-header">
+            <h1 className="heading"> Career Timeline</h1>
           </div>
           <div className="job-timeline">
             <ul>
