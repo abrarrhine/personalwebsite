@@ -68,8 +68,8 @@ const Particlejs = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 1.7,
-                        straight: false,
+                        speed: 1.6,
+                        straight: true,
                     },
                     number: {
                         density: {
