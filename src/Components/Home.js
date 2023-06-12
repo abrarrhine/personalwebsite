@@ -12,6 +12,9 @@ import mlcertvalid from "../img/mlcertvalid.pdf";
 import devcertvalid from "../img/devcertvalid.pdf";
 import Footer from "./Footer";
 import Particlesbg from "./Particlejs"; 
+import gradicon from "../img/graduate.png"; 
+import sweicon from "../img/developer.png";
+import codeicon from "../img/coding.png"; 
 
 function Home() {
   return (
@@ -66,14 +69,17 @@ function Home() {
               </h3>
             </div>
             <div>
-              <h3 className="home__text sweet  px_20">Education: </h3>
-              <h3 className="home__text orange"> Virginia Tech </h3>
+              {/* <h3 className="home__text sweet  px_20">Education: </h3> */}
+              <img src={gradicon} className="grad-icon px_20" alt="SWE icon"></img>
+              <h3 className="home__text orange"> Virginia Tech 
+                <span> (BS/MEng)</span>
+              </h3>
             </div>
             <div>
-              <h3 className="home__text sweet  px_20">Employer: </h3>
-              <h3 className="home__text orange"> Raytheon Technologies </h3>
+              <img src={codeicon} className="swe-icon px_20" alt="SWE icon"></img>
+              <h3 className="home__text red_text"> Raytheon Technologies </h3>
             </div>
-            <h3 className="home__text sweet px_20">Certifications:</h3>
+            {/* <h3 className="home__text sweet px_20">Certifications:</h3> */}
             <div className="badges_container">
               <a href={devcertvalid} target="_blank">
                 <img src={devcert} className="certification"></img>
