@@ -68,7 +68,7 @@ const Particlejs = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 2,
+                        speed: 1.7,
                         straight: false,
                     },
                     number: {
@@ -76,10 +76,10 @@ const Particlejs = () => {
                             enable: true,
                             area: 1600,
                         },
-                        value: 120,
+                        value: 150,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.4,
                     },
                     shape: {
                         type: "circle",
