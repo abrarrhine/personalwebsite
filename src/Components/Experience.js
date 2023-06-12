@@ -53,28 +53,28 @@ function Experience() {
                   Master of Engineering in Computer Science
                 </div>
                 <div class="descr">
-                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleRed}>
                 <div class="date">Dec 2022 - May 2023</div>
                 <div class="title">Software Developer</div>
                 <div class="descr">
-                  <img src={spalogo} className="company-logo" alt="Virginia Tech Logo"></img>
+                  <img src={spalogo} className="company-logo" alt="SPA Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleDeepBlue}>
                 <div class="date">Aug 2020 - May 2022</div>
                 <div class="title">Bachelor of Science in Computer Science</div>
                 <div class="descr">
-                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleLightGreen}>
                 <div class="date">November 2021 - April 2022</div>
                 <div class="title">Web Developer</div>
                 <div class="descr">
-                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
             </ul>
