@@ -16,11 +16,10 @@
   align-content: center;
   font-family: "Poppins", sans-serif;
   color: var(--color);
-  
 }
 
 .experiece_bg{
-    background-image: url(../img/work_experience_bg.jpg); 
+    background-image: url(../img/jet.jpg); 
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,6 +27,20 @@
     width: 100%;
     height: 100%;
     z-index: 2;
+}
+
+.experience-bg-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;  
+}
+
+.company-logo{
+  max-width: 100%;
 }
 
 h1 {

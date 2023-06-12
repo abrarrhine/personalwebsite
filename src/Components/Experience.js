@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.css";
 import rtxlogo from "../img/rt_logo_300.webp";
 import vtlogo from "../img/virginia_tech.png";
-import Footer from "./Footer";
+import spalogo from "../img/spalogo.png"
 
 function Experience() {
   const accentColorStyleBlue = {
@@ -28,7 +28,7 @@ function Experience() {
   return (
     <div className="experience component__space" id="experience">
       <div className="experiece_bg">
-        <div className="bg-overlay"></div>
+        <div className="experience-bg-overlay"></div>
 
         <div className="container">
           <div className="heading">
@@ -44,9 +44,7 @@ function Experience() {
                 <div class="date"> Jun 2023 - Present </div>
                 <div class="title">Sr. Software Development Engineer</div>
                 <div class="descr">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                  itaque hic quibusdam fugiat est numquam harum, accusamus
-                  suscipit consequatur laboriosam!
+                  <img src={rtxlogo} className="company-logo" alt="RTX Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleYellow}>
@@ -55,34 +53,28 @@ function Experience() {
                   Master of Engineering in Computer Science
                 </div>
                 <div class="descr">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-                  adipisci nobis nostrum vero nihil veniam.
+                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleRed}>
                 <div class="date">Dec 2022 - May 2023</div>
                 <div class="title">Software Developer</div>
                 <div class="descr">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  minima consequuntur soluta placeat iure totam commodi
-                  repellendus ea delectus, libero fugit quod reprehenderit,
-                  sequi quo, et dolorum saepe nulla hic.
+                  <img src={spalogo} className="company-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleDeepBlue}>
                 <div class="date">Aug 2020 - May 2022</div>
                 <div class="title">Bachelor of Science in Computer Science</div>
                 <div class="descr">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Impedit, cumque.
+                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
               <li style={accentColorStyleLightGreen}>
-                <div class="date">November 2021 - May 2022</div>
+                <div class="date">November 2021 - April 2022</div>
                 <div class="title">Web Developer</div>
                 <div class="descr">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Odit, non.
+                  <img src={vtlogo} className="company-logo" alt="Virginia Tech Logo"></img>
                 </div>
               </li>
             </ul>
