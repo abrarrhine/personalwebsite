@@ -1,0 +1,82 @@
+img.about__img{
+    border-radius: 20px;
+    width: 100%; 
+}
+
+.aboutme-welcome-overlay{
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+h1.about__heading{
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: start;
+    font-family: Georgia;
+    font-size: 60px;
+}
+
+ul.skill__list{
+  list-style-type:square;
+  list-style-position: inside;
+  color: #fff;
+  padding: 10px;
+}
+
+.about__meta{
+    width: 75%;
+}
+
+.resumebutton{
+    background-color:#CF4420; 
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    margin-top: 20px;
+  }
+
+.resumebutton:hover{
+    transform: scale(1.02);
+}
+
+.font_about{
+    color: white;
+    font-size: 35px;
+}
+
+.col__22{
+    max-width: 66.66667%;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    margin-top: 0px;
+}
+
+.col__23{
+    max-width: 33.333333%;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    margin-top: 0px;
+    padding-left: 30px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1024px){
+.p__color{
+    font-size: 15px!important; 
+}
+}
