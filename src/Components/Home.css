@@ -175,9 +175,9 @@ ul.skill__list{
     }
 
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 768px){
     .certification{
-        width: 175px!important;
+        width: 120px!important;
     }
 }
 
