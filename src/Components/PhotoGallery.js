@@ -47,7 +47,7 @@ const PhotoGallery = () => {
     return () => window.removeEventListener('resize', resizeAll);
   }, []);
 
-  const images = Array.from({ length: 28 }, (_, i) => `Abrar-${i + 1}.jpeg`);
+  const images = Array.from({ length: 49 }, (_, i) => `Abrar-${i + 1}.jpeg`);
 
   return (
     <div className="gallery gallery__space" id="gallery" ref={galleryRef}>
