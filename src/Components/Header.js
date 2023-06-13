@@ -13,7 +13,7 @@ function Header() {
                 <li> <Link to="/experience" >Experience</Link></li>
                 <li> <Link to="/projects" >Projects</Link></li>
                 <li> <Link to="/artworks" >Artworks</Link></li>
-                <li> <Link to="/" >Photos</Link></li>
+                <li> <Link to="/photos" >Photos</Link></li>
             </ul>
             <label for="nav-toggle" className='icon-burger'>
                 <div className='line'></div>
