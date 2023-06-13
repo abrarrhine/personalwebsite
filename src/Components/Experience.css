@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 
-.experience-container{
-  flex-direction: row;  
-  flex-flow: wrap; 
+.experience-container {
+  flex-direction: row;
+  flex-flow: wrap;
   position: relative;
   z-index: 5;
 }
@@ -25,41 +25,42 @@
   color: var(--color);
 }
 
-.experience-header{
+.experience-header {
   padding-top: 40px;
   padding-bottom: 60px;
 }
 
-.experiece_bg{
-    background-image: url(../img/roadmap.jpg); 
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.experiece_bg {
+  background-image: url(../img/roadmap.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
-.experience-bg-overlay{
+.experience-bg-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;  
+  z-index: 3;
 }
 
-.company-logo{
+.company-logo {
   max-width: 100%;
 }
 
-.school-logo{
+.school-logo {
   max-width: 80%;
 }
 
-.descr, .title{
+.descr,
+.title {
   display: flex;
   justify-content: center;
 }
@@ -142,23 +143,23 @@ ul li .date::before {
 }
 
 :root {
-    --accent-color: #41516C;
-    --bgColor: white; /* Set a specific background color value */
-  }
+  --accent-color: #41516c;
+  --bgColor: white; /* Set a specific background color value */
+}
 
 /* circle */
 ul li .date::after {
-    content: "";
-    position: absolute;
-    width: 2rem;
-    aspect-ratio: 1;
-    background: var(--bgColor);
-    border: 0.3rem solid var(--accent-color);
-    border-radius: 50%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    right: calc(100% + var(--col-gap) + var(--line-w) / 2);
-  }
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
 
 /* title descr */
 ul li .title,

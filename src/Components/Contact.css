@@ -1,73 +1,73 @@
-.contact{
+.contact {
 }
 
-h1.contact__heading{
-    font-size: 60px;
+h1.contact__heading {
+  font-size: 60px;
 }
 
-p.contact__heading{
-    font-size: 18px;
-    line-height: 30px;
-    color:aliceblue; 
-    font-weight: 400;
-    margin-top: 20px;
+p.contact__heading {
+  font-size: 18px;
+  line-height: 30px;
+  color: aliceblue;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
-img.contact__img{
-    width: 75%;
-    /* height:100%;  */
-    overflow: hidden;
-    border-radius: 10px;
+img.contact__img {
+  width: 75%;
+  /* height:100%;  */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-input.contact{
-    display: block;
-    width: 100%;
-    padding: 0 20px;
-    border-radius: 5px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    height: 50px;
-    line-height: 46px;
-    margin: 20px 0px;
-    outline: none;
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: .1px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: none;
-    border: 2px solid hsla(0, 0%, 100%, .2);
+input.contact {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 50px;
+  line-height: 46px;
+  margin: 20px 0px;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: none;
+  border: 2px solid hsla(0, 0%, 100%, 0.2);
 }
 
-textarea#message{
-    height: 120px;
-    background: none;
-    padding: 0 20px;
-    width: 100%;
-    line-height: 46px;
-    color: #fff; 
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: .1px;
-    border: 2px solid hsla(0, 0%, 100%, .2);
+textarea#message {
+  height: 120px;
+  background: none;
+  padding: 0 20px;
+  width: 100%;
+  line-height: 46px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.1px;
+  border: 2px solid hsla(0, 0%, 100%, 0.2);
 }
 
-button.submit_btn.contact.pointer{
-    margin: 20px 0px;
+button.submit_btn.contact.pointer {
+  margin: 20px 0px;
 }
 
-.submit_btn{
-    background-color:#CF4420; 
-    border: 2px solid;
-    border-color: white;
-    color: white;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
-    margin-top: 10px;
+.submit_btn {
+  background-color: #cf4420;
+  border: 2px solid;
+  border-color: white;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 10px;
 }
