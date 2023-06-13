@@ -50,7 +50,7 @@ const PhotoGallery = () => {
   const images = Array.from({ length: 28 }, (_, i) => `Abrar-${i + 1}.jpeg`);
 
   return (
-    <div className="gallery" id="gallery" ref={galleryRef}>
+    <div className="gallery gallery__space" id="gallery" ref={galleryRef}>
       {images.map((imageName, i) => (
         <div className="gallery-item" key={i}>
           <div className="content">

@@ -2,6 +2,13 @@
   background-color: #eee;
 }
 
+.gallery__space {
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
 .hello {
   opacity: 1 !important;
 }
