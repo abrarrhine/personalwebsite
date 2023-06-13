@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import imagesLoaded from 'imagesloaded';
 import './PhotoGallery.css';
 
 const PhotoGallery = () => {
@@ -21,27 +20,41 @@ const PhotoGallery = () => {
     event.currentTarget.classList.contains('full')
       ? event.currentTarget.classList.add('no-hover')
       : event.currentTarget.classList.remove('no-hover');
-};
-
+  };
 
   useEffect(() => {
-    imagesLoaded(galleryRef.current, resizeAll);
     window.addEventListener('resize', resizeAll);
     galleryRef.current.querySelectorAll('.gallery-item').forEach((item) => {
       item.addEventListener('click', toggleFull);
     });
 
-    return () => {
-      window.removeEventListener('resize', resizeAll);
-    };
+    galleryRef.current.querySelectorAll('img').forEach((item) => {
+      item.classList.add('byebye');
+      if (item.complete) {
+        console.log(item.src);
+      } else {
+        item.addEventListener('load', function () {
+          const altura = getVal(galleryRef.current, 'grid-auto-rows');
+          const gap = getVal(galleryRef.current, 'grid-row-gap');
+          const gitem = item.parentElement.parentElement;
+          gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+          item.classList.remove('byebye');
+        });
+      }
+    });
+
+    resizeAll();
+    return () => window.removeEventListener('resize', resizeAll);
   }, []);
+
+  const images = Array.from({ length: 28 }, (_, i) => `Abrar-${i + 1}.jpeg`);
 
   return (
     <div className="gallery" id="gallery" ref={galleryRef}>
-      {Array(28).fill(0).map((_, i) => (
+      {images.map((imageName, i) => (
         <div className="gallery-item" key={i}>
           <div className="content">
-            <img src={`https://source.unsplash.com/random/?tech,item${i}`} alt="" />
+            <img src={require(`../img/${imageName}`)} alt={imageName} />
           </div>
         </div>
       ))}
