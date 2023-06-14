@@ -51,13 +51,13 @@ function Artwork() {
     return () => window.removeEventListener("resize", resizeAll);
   }, []);
 
-  const images = Array.from({ length: 10 }, (_, i) => `Painting-${i + 1}.jpeg`);
+  const images = Array.from({ length: 11 }, (_, i) => `Painting-${i + 1}.jpeg`);
 
   return (
     <div className="gallery__space">
       <div className="quotes-div">
         <div className="quote">
-        “I dream my painting and I paint my dream.” - Vincent Van Gogh
+          “I dream my painting and I paint my dream.” - Vincent Van Gogh
         </div>
       </div>
       <div className="gallery" id="gallery" ref={galleryRef}>
