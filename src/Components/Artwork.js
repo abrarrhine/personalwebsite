@@ -1,44 +1,65 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import "./Artwork.css"
-import bull_painting from '../img/bullpainting.JPG'
-import colorful_sky from '../img/colorful_sky.JPG'
-import abstract_painting from '../img/abstractpainting.JPG'
-import horse from '../img/horse.JPG'
-import sketches from '../img/sketches.JPG'
-import lone_woman from '../img/lone_woman.JPG'
-import alexander from '../img/alexander.JPG'
-import return_home from '../img/return_home.JPG'
-import old_city from '../img/old_city.JPG'
-import cloudy_sky from '../img/cloudy_sky.JPG'
 
 function Artwork() {
+  const galleryRef = useRef(null);
+
+  const getVal = (elem, style) => parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+  const getHeight = (item) => item.querySelector('.content').getBoundingClientRect().height;
+
+  const resizeAll = () => {
+    const altura = getVal(galleryRef.current, 'grid-auto-rows');
+    const gap = getVal(galleryRef.current, 'grid-row-gap');
+    galleryRef.current.querySelectorAll('.gallery-item').forEach((item) => {
+      item.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+  };
+
+  const toggleFull = (event) => {
+    event.currentTarget.classList.toggle('full');
+    event.currentTarget.classList.contains('full')
+      ? event.currentTarget.classList.add('no-hover')
+      : event.currentTarget.classList.remove('no-hover');
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeAll);
+    galleryRef.current.querySelectorAll('.gallery-item').forEach((item) => {
+      item.addEventListener('click', toggleFull);
+    });
+
+    galleryRef.current.querySelectorAll('img').forEach((item) => {
+      item.classList.add('byebye');
+      if (item.complete) {
+        console.log(item.src);
+      } else {
+        item.addEventListener('load', function () {
+          const altura = getVal(galleryRef.current, 'grid-auto-rows');
+          const gap = getVal(galleryRef.current, 'grid-row-gap');
+          const gitem = item.parentElement.parentElement;
+          gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+          item.classList.remove('byebye');
+        });
+      }
+    });
+
+    resizeAll();
+    return () => window.removeEventListener('resize', resizeAll);
+  }, []);
+
+  const images = Array.from({ length: 10 }, (_, i) => `Painting-${i + 1}.jpeg`);
+
   return (
-    <div className='service component__space' id='artworks'>
-        <div className='heading'>
-            <h1 className='heading sweet'> My Artworks</h1>
-            <p className='heading p__color'> These are some of my paintings and skecthes
-            that I have done in my free time. I love drawing sketches and doing paintings 
-            either it be oil painting or watercolor. 
-            </p>
+    <div className="gallery gallery__space" id="gallery" ref={galleryRef}>
+      {images.map((imageName, i) => (
+        <div className="gallery-item" key={i}>
+          <div className="content">
+            <img src={require(`../img/${imageName}`)} alt={imageName} />
+          </div>
         </div>
-        <div className='body__art'>
-            <div className='grid-wrap'>
-              <ul>
-                <li><img src={bull_painting}></img></li>
-                <li><img src={colorful_sky}></img></li>
-                <li><img src={abstract_painting}></img></li>
-                <li><img src={horse}></img></li>
-                <li><img src={sketches}></img></li>
-                <li><img src={lone_woman}></img></li>
-                <li><img src={old_city}></img></li>
-                <li><img src={return_home}></img></li>
-                <li><img src={alexander}></img></li>
-                <li><img src={cloudy_sky}></img></li>
-              </ul>
-            </div>
-        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default Artwork
