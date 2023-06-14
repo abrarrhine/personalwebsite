@@ -1,183 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+.quotes-div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.quotes-div-bottom{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 50pt;
+  font-family: "Tangerine", cursive;
+}
 .my-photo-gallery {
-    background-color: #eee;
-  }
-  
-  .gallery__space {
-    padding-top: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-  }
-  
-  .hello {
-    opacity: 1 !important;
-  }
-  
-  .expanded {
-    transform: scale(0.5);
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-  
-  .full {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .full .content {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .full .content img {
-    max-width: 70%;
-    max-height: 70%;
-  }
-  
-  .byebye {
-    opacity: 0;
-  }
-  
-  .byebye:hover {
-    transform: scale(0.2) !important;
-  }
-  
+  background-color: #eee;
+}
+
+.gallery__space {
+  padding-top: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.hello {
+  opacity: 1 !important;
+}
+
+.expanded {
+  transform: scale(0.5);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.full .content {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full .content img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.byebye {
+  opacity: 0;
+}
+
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+
+.gallery .content {
+  padding: 4px;
+}
+
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+
+@media (max-width: 600px) {
   .gallery {
-    display: grid;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
-  
-  .gallery img {
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 16px #333;
-    transition: all 1.5s ease;
+    transform: rotate(0deg);
   }
-  
-  .gallery img:hover {
-    box-shadow: 0 0 32px #333;
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
   }
-  
-  .gallery .content {
-    padding: 4px;
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
   }
-  
-  .gallery .gallery-item {
-    transition: grid-row-start 300ms linear;
-    transition: transform 300ms ease;
-    transition: all 0.5s ease;
-    cursor: pointer;
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
   }
-  
-  .gallery .gallery-item:hover {
-    transform: scale(1.025);
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
   }
-  
-  @media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    }
+}
+
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
   }
-  
-  @media (max-width: 400px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
   }
-  
-  @-moz-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
   }
-  
-  @-webkit-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
   }
-  
-  @-o-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
+}
+
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
   }
-  
-  @keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
   }
-  
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}

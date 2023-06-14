@@ -8,13 +8,10 @@ import devcert from "../img/AWS-Certified-Developer.png";
 import mlcert from "../img/AWS-Certified-Machine-Learning-Specialty_badge.png";
 import google_ml_cert from "../img/google_ml_cert.png";
 import tf_cert from "../img/tensorflow_cert_logo.png";
-import mlcertvalid from "../img/mlcertvalid.pdf";
-import devcertvalid from "../img/devcertvalid.pdf";
 import Footer from "./Footer";
-import Particlesbg from "./Particlejs"; 
-import gradicon from "../img/graduate.png"; 
-import sweicon from "../img/developer.png";
-import codeicon from "../img/coding.png"; 
+import Particlesbg from "./Particlejs";
+import gradicon from "../img/graduate.png";
+import codeicon from "../img/coding.png";
 
 function Home() {
   return (
@@ -70,40 +67,38 @@ function Home() {
             </div>
             <div>
               {/* <h3 className="home__text sweet  px_20">Education: </h3> */}
-              <img src={gradicon} className="grad-icon px_20" alt="SWE icon"></img>
-              <h3 className="home__text orange"> Virginia Tech 
+              <img
+                src={gradicon}
+                className="grad-icon px_20"
+                alt="SWE icon"
+              ></img>
+              <h3 className="home__text orange">
+                {" "}
+                Virginia Tech
                 <span> (BS/MEng)</span>
               </h3>
             </div>
             <div>
-              <img src={codeicon} className="swe-icon px_20" alt="SWE icon"></img>
+              <img
+                src={codeicon}
+                className="swe-icon px_20"
+                alt="SWE icon"
+              ></img>
               <h3 className="home__text red_text"> Raytheon Technologies </h3>
             </div>
             {/* <h3 className="home__text sweet px_20">Certifications:</h3> */}
             <div className="badges_container">
-              <a href={devcertvalid} target="_blank">
+              <a>
                 <img src={devcert} className="certification"></img>
               </a>
-              <a href={mlcertvalid} target="_blank">
-                <img
-                  src={mlcert}
-                  className="certification"
-                  href={mlcertvalid}
-                ></img>
+              <a>
+                <img src={mlcert} className="certification"></img>
               </a>
-              <a href={mlcertvalid} target="_blank">
-                <img
-                  src={google_ml_cert}
-                  className="certification"
-                  href={mlcertvalid}
-                ></img>
+              <a>
+                <img src={google_ml_cert} className="certification"></img>
               </a>
-              <a href={mlcertvalid} target="_blank">
-                <img
-                  src={tf_cert}
-                  className="certification"
-                  href={mlcertvalid}
-                ></img>
+              <a>
+                <img src={tf_cert} className="certification"></img>
               </a>
             </div>
           </div>
