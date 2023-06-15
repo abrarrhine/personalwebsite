@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+.quotes-div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ex-quotes-div-bottom{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.ex-quote {
+  color: white !important;
+  font-size: 50pt;
+  font-family: "Tangerine", cursive;
+}
 
 *,
 *::before,
