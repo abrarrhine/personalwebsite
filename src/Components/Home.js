@@ -94,12 +94,12 @@ function Home() {
               <a>
                 <img src={mlcert} className="certification"></img>
               </a>
-              <a>
+              {/* <a>
                 <img src={google_ml_cert} className="certification"></img>
               </a>
               <a>
                 <img src={tf_cert} className="certification"></img>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

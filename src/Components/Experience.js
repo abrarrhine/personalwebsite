@@ -1,8 +1,10 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 import "./Experience.css";
 import rtxlogo from "../img/rt_logo_300.webp";
 import vtlogo from "../img/virginia_tech.png";
 import spalogo from "../img/spalogo.png";
+import spdlimit from "../img/nospeedlimit.PNG"
 
 function Experience() {
   const accentColorStyleBlue = {
@@ -32,6 +34,23 @@ function Experience() {
         <div className="experience-container">
           <div className="experience-header">
             <h1 className="heading"> Career Timeline</h1>
+          </div>
+          <div className="code-snippet-container">
+            <div className="code-snippet">
+              <pre>
+                <code>
+                  <span className="keyword">while</span> (alive) {"{"}
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">eat()</span>;
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">sleep()</span>;
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">code()</span>;
+                  <br />
+                  {"}"}
+                </code>
+              </pre>
+            </div>
           </div>
           <div className="job-timeline">
             <ul>
