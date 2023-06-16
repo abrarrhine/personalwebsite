@@ -58,7 +58,7 @@ function Experience() {
             </div>
           </div>
           <div className="job-timeline">
-            <ul className="experience-ul"> {/* Add unique class name or ID here */}
+            <ul className="experience-ul"> 
               <li style={accentColorStyleBlue}>
                 <div className="date"> Jun 2023 - Present </div>
                 <div className="title">Sr. Software Development Engineer</div>
