@@ -4,7 +4,7 @@ import "./Experience.css";
 import rtxlogo from "../img/rt_logo_300.webp";
 import vtlogo from "../img/virginia_tech.png";
 import spalogo from "../img/spalogo.png";
-import spdlimit from "../img/nospeedlimit.PNG"
+import spdlimit from "../img/nospeedlimit.PNG";
 
 function Experience() {
   const accentColorStyleBlue = {
@@ -33,23 +33,28 @@ function Experience() {
         <div className="experience-bg-overlay"></div>
         <div className="experience-container">
           <div className="experience-header">
-            <h1 className="heading"> Career Timeline</h1>
+            <h1 className="heading">Career Timeline</h1>
           </div>
-          <div className="code-snippet-container">
-            <div className="code-snippet">
-              <pre>
-                <code>
-                  <span className="keyword">while</span> (alive) {"{"}
-                  <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">eat()</span>;
-                  <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">sleep()</span>;
-                  <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">code()</span>;
-                  <br />
-                  {"}"}
-                </code>
-              </pre>
+          <div className="content-container">
+            <div className="image-container">
+              <img src={spdlimit} alt="Speed Limit" className="spdlimit-image" />
+            </div>
+            <div className="code-snippet-container">
+              <div className="code-snippet">
+                <pre>
+                  <code>
+                    <span className="keyword">while</span> (alive) {"{"}
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">eat()</span>;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">sleep()</span>;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="function">code()</span>;
+                    <br />
+                    {"}"}
+                  </code>
+                </pre>
+              </div>
             </div>
           </div>
           <div className="job-timeline">
@@ -58,64 +63,42 @@ function Experience() {
                 <div class="date"> Jun 2023 - Present </div>
                 <div class="title">Sr. Software Development Engineer</div>
                 <div class="descr">
-                  <img
-                    src={rtxlogo}
-                    className="company-logo"
-                    alt="RTX Logo"
-                  ></img>
+                  <img src={rtxlogo} className="company-logo" alt="RTX Logo" />
                 </div>
               </li>
               <li style={accentColorStyleYellow}>
                 <div class="date"> Aug 2022 - May 2023</div>
-                <div class="title">
-                  Master of Engineering in Computer Science
-                </div>
+                <div class="title">Master of Engineering in Computer Science</div>
                 <div class="descr">
-                  <img
-                    src={vtlogo}
-                    className="school-logo"
-                    alt="Virginia Tech Logo"
-                  ></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
               <li style={accentColorStyleRed}>
                 <div class="date">Dec 2022 - May 2023</div>
                 <div class="title">Software Developer</div>
                 <div class="descr">
-                  <img
-                    src={spalogo}
-                    className="company-logo"
-                    alt="SPA Logo"
-                  ></img>
+                  <img src={spalogo} className="company-logo" alt="SPA Logo" />
                 </div>
               </li>
               <li style={accentColorStyleDeepBlue}>
                 <div class="date">Aug 2020 - May 2022</div>
                 <div class="title">Bachelor of Science in Computer Science</div>
                 <div class="descr">
-                  <img
-                    src={vtlogo}
-                    className="school-logo"
-                    alt="Virginia Tech Logo"
-                  ></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
               <li style={accentColorStyleLightGreen}>
                 <div class="date">November 2021 - April 2022</div>
                 <div class="title">Web Developer</div>
                 <div class="descr">
-                  <img
-                    src={vtlogo}
-                    className="school-logo"
-                    alt="Virginia Tech Logo"
-                  ></img>
+                  <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
             </ul>
           </div>
           <div className="ex-quotes-div-bottom">
             <div className="ex-quote">
-            “If it doesn’t challenge you, it won’t change you.” — Fred DeVito
+              “If it doesn’t challenge you, it won’t change you.” — Fred DeVito
             </div>
           </div>
         </div>

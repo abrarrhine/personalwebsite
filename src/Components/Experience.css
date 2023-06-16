@@ -3,15 +3,27 @@
 
 /* Rest of the CSS styles */
 
+.image-container {
+  position: fixed;
+  top: 45%;
+  right: 10%;
+  transform: translate(50%, -50%);
+  z-index: -1;
+}
+
 .code-snippet-container {
   position: fixed;
   top: 50%;
-  right: 10%;
+  right: 90%;
   transform: translate(50%, -50%);
+  z-index: -1;
+}
+
+.spdlimit-image{
+  max-width: 150px;
 }
 
 .code-snippet {
-  
   padding: 20px;
   border-radius: 8px;
   font-family: "Fira Code", monospace;
