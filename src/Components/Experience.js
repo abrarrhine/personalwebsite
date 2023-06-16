@@ -58,39 +58,39 @@ function Experience() {
             </div>
           </div>
           <div className="job-timeline">
-            <ul>
+            <ul className="experience-ul"> {/* Add unique class name or ID here */}
               <li style={accentColorStyleBlue}>
-                <div class="date"> Jun 2023 - Present </div>
-                <div class="title">Sr. Software Development Engineer</div>
-                <div class="descr">
+                <div className="date"> Jun 2023 - Present </div>
+                <div className="title">Sr. Software Development Engineer</div>
+                <div className="descr">
                   <img src={rtxlogo} className="company-logo" alt="RTX Logo" />
                 </div>
               </li>
               <li style={accentColorStyleYellow}>
-                <div class="date"> Aug 2022 - May 2023</div>
-                <div class="title">Master of Engineering in Computer Science</div>
-                <div class="descr">
+                <div className="date"> Aug 2022 - May 2023</div>
+                <div className="title">Master of Engineering in Computer Science</div>
+                <div className="descr">
                   <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
               <li style={accentColorStyleRed}>
-                <div class="date">Dec 2022 - May 2023</div>
-                <div class="title">Software Developer</div>
-                <div class="descr">
+                <div className="date">Dec 2022 - May 2023</div>
+                <div className="title">Software Developer</div>
+                <div className="descr">
                   <img src={spalogo} className="company-logo" alt="SPA Logo" />
                 </div>
               </li>
               <li style={accentColorStyleDeepBlue}>
-                <div class="date">Aug 2020 - May 2022</div>
-                <div class="title">Bachelor of Science in Computer Science</div>
-                <div class="descr">
+                <div className="date">Aug 2020 - May 2022</div>
+                <div className="title">Bachelor of Science in Computer Science</div>
+                <div className="descr">
                   <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
               <li style={accentColorStyleLightGreen}>
-                <div class="date">November 2021 - April 2022</div>
-                <div class="title">Web Developer</div>
-                <div class="descr">
+                <div className="date">November 2021 - April 2022</div>
+                <div className="title">Web Developer</div>
+                <div className="descr">
                   <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
               </li>
