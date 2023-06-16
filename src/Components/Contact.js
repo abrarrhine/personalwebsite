@@ -6,7 +6,7 @@ function Contact() {
     <div className="contact component__space" id="contact">
       <div className="container">
         <div className="row">
-          <div className="col__2">
+          <div className="col__2 contact-div-box">
             <div className="contact__box">
               <div className="contact__meta">
                 <h1 className="contact__heading sweet">Contact Me</h1>
