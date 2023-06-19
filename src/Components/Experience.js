@@ -88,8 +88,8 @@ function Experience() {
                 </div>
               </li>
               <li style={accentColorStyleLightGreen}>
-                <div className="date">November 2021 - April 2022</div>
-                <div className="title">Web Developer</div>
+                <div className="date">August 2021 - April 2022</div>
+                <div className="title">Computer Science Ambassador</div>
                 <div className="descr">
                   <img src={vtlogo} className="school-logo" alt="Virginia Tech Logo" />
                 </div>
