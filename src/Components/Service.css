@@ -3,7 +3,13 @@ h1.heading {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.project-heading{
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
 }
 
 .projects_bg {
@@ -113,6 +119,7 @@ body {
 .card-category-3 ul li {
   margin: 20px 20px;
   background-color: rgb(201, 187, 187);
+  border-radius: 10px;
 }
 
 .card-category-1,

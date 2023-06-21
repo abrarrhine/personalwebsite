@@ -13,8 +13,8 @@ function Service() {
       <div className="projects_bg">
         <div className="experience-bg-overlay"></div>
         <div className="container">
-          <div className="heading">
-            <h1 className="heading sweet"> My Projects</h1>
+          <div className="project-heading">
+            <h1 className="heading sweet project-header"> My Projects</h1>
           </div>
 
           <div className="card-category-2">
