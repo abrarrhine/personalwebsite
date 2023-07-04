@@ -369,7 +369,8 @@ body {
 }
 
 .img-card.iCard-style1 .card-text {
-  color: #795548;
+  /* color: #e17e59; */
+  color: #e77174;
 }
 
 .img-card.iCard-style1 .card-link a {

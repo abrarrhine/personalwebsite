@@ -9,15 +9,15 @@ import photo_gallery from "../img/photo-gallery.jpg";
 import textbook_app from "../img/textbook_app.JPG";
 import python_logo from "../img/python_logo.png";
 import tensorflow_logo from "../img/tensorflow_logo.png";
-import java_logo from "../img/Java-Logo.png"; 
-import vuejs_logo from "../img/Vue.js_Logo.png"; 
-import mysql_logo from "../img/MySQL-Logo.png"; 
-import react_logo from "../img/React-icon.png"; 
-import aws_logo from "../img/Amazon-Web-Services-AWS-Logo.png"; 
-import android_logo from "../img/Android-Logo.png"; 
+import java_logo from "../img/Java-Logo.png";
+import vuejs_logo from "../img/Vue.js_Logo.png";
+import mysql_logo from "../img/MySQL-Logo.png";
+import react_logo from "../img/React-icon.png";
+import aws_logo from "../img/Amazon-Web-Services-AWS-Logo.png";
+import android_logo from "../img/Android-Logo.png";
 import as_logo from "../img/Android_Studio_Icon_3.6.svg.png";
-import kotlin_logo from "../img/Kotlin_Icon.svg.png"; 
-import capstone_poster from "../img/Capstone_Project_Poster.png"; 
+import kotlin_logo from "../img/Kotlin_Icon.svg.png";
+import capstone_poster from "../img/Capstone_Project_Poster.png";
 
 function Service() {
   return (
@@ -47,24 +47,31 @@ function Service() {
                         Traffic Sign Recognizer
                       </span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Developed a traffic sign recognizer by using Vision
+                        Transformer (ViT). Accuracy: 99.76%
                       </p>
                       <div className="tool-icons">
-                        <img className="small_logo" src={python_logo} alt="Python logo" />
-                        <img className="small_logo" src={tensorflow_logo} alt="Tensorflow logo" />
+                        <img
+                          className="small_logo"
+                          src={python_logo}
+                          alt="Python logo"
+                        />
+                        <img
+                          className="small_logo"
+                          src={tensorflow_logo}
+                          alt="Tensorflow logo"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href="https://github.com/abrarrhine/Traffic-Sign-Recognizer" title="View Project" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/abrarrhine/Traffic-Sign-Recognizer"
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
@@ -91,15 +98,32 @@ function Service() {
                         </a>
                       </p>
                       <div className="tool-icons">
-                        <img className="small_logo" src={vuejs_logo} alt="VUE.js logo" />
-                        <img className="big_logo" src={java_logo} alt="Javalogo" />
-                        <img className="big_logo" src={mysql_logo} alt="MySQL logo" />
+                        <img
+                          className="small_logo"
+                          src={vuejs_logo}
+                          alt="VUE.js logo"
+                        />
+                        <img
+                          className="big_logo"
+                          src={java_logo}
+                          alt="Javalogo"
+                        />
+                        <img
+                          className="big_logo"
+                          src={mysql_logo}
+                          alt="MySQL logo"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href="https://github.com/abrarrhine/abrar-bookstore-vue-client" title="View Project" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/abrarrhine/abrar-bookstore-vue-client"
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
@@ -119,24 +143,31 @@ function Service() {
                     <div className="card-text">
                       <span className="card-title">Transaction Classifier</span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Built an NLP model to predict categories of transactions
+                        and identify frequent purchases. Accuracy: 88%.
                       </p>
                       <div className="tool-icons">
-                        <img className="small_logo" src={python_logo} alt="Python logo" />
-                        <img className="small_logo" src={tensorflow_logo} alt="Tensorflow logo" />
+                        <img
+                          className="small_logo"
+                          src={python_logo}
+                          alt="Python logo"
+                        />
+                        <img
+                          className="small_logo"
+                          src={tensorflow_logo}
+                          alt="Tensorflow logo"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="View Project">
+                    <a
+                      href="https://github.com/abrarrhine/Transaction-Classifier"
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
@@ -163,15 +194,32 @@ function Service() {
                         </a>
                       </p>
                       <div className="tool-icons">
-                        <img className="small_logo" src={python_logo} alt="Python logo" />
-                        <img className="small_logo" src={react_logo} alt="React logo" />
-                        <img className="big_logo" src={aws_logo} alt="AWS logo" />
-                      </div> 
+                        <img
+                          className="small_logo"
+                          src={python_logo}
+                          alt="Python logo"
+                        />
+                        <img
+                          className="small_logo"
+                          src={react_logo}
+                          alt="React logo"
+                        />
+                        <img
+                          className="big_logo"
+                          src={aws_logo}
+                          alt="AWS logo"
+                        />
+                      </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href={capstone_poster} title="View Project" target="_blank" rel="noreferrer">
+                    <a
+                      href={capstone_poster}
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
@@ -198,15 +246,32 @@ function Service() {
                         </a>
                       </p>
                       <div className="tool-icons">
-                        <img className="small_logo" src={kotlin_logo} alt="Python logo" />
-                        <img className="big_logo" src={android_logo} alt="React logo" />
-                        <img className="small_logo" src={as_logo} alt="AWS logo" />
+                        <img
+                          className="small_logo"
+                          src={kotlin_logo}
+                          alt="Python logo"
+                        />
+                        <img
+                          className="big_logo"
+                          src={android_logo}
+                          alt="React logo"
+                        />
+                        <img
+                          className="small_logo"
+                          src={as_logo}
+                          alt="AWS logo"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href="https://github.com/abrarrhine/FancyGallery" title="View Project" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/abrarrhine/FancyGallery"
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
@@ -233,15 +298,32 @@ function Service() {
                         </a>
                       </p>
                       <div className="tool-icons">
-                        <img className="big_logo" src={java_logo} alt="Python logo" />
-                        <img className="big_logo" src={android_logo} alt="React logo" />
-                        <img className="small_logo" src={as_logo} alt="AWS logo" />
+                        <img
+                          className="big_logo"
+                          src={java_logo}
+                          alt="Python logo"
+                        />
+                        <img
+                          className="big_logo"
+                          src={android_logo}
+                          alt="React logo"
+                        />
+                        <img
+                          className="small_logo"
+                          src={as_logo}
+                          alt="AWS logo"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="card-link">
-                    <a href="https://github.com/abrarrhine/TextbookBuddies" title="View Project" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/abrarrhine/TextbookBuddies"
+                      title="View Project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span>View Project</span>
                     </a>
                   </div>
