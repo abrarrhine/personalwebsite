@@ -78,6 +78,10 @@ ul.skill__list {
   padding-left: 30px;
 }
 
+.resume-button img{
+  max-width: 150px;
+}
+
 /*Responsive*/
 @media only screen and (max-width: 1024px) {
   .p__color {
