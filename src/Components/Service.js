@@ -64,7 +64,7 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="View Project">
+                    <a href="https://github.com/abrarrhine/Traffic-Sign-Recognizer" title="View Project" target="_blank" rel="noreferrer">
                       <span>View Project</span>
                     </a>
                   </div>
@@ -99,7 +99,7 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="View Project">
+                    <a href="https://github.com/abrarrhine/abrar-bookstore-vue-client" title="View Project" target="_blank" rel="noreferrer">
                       <span>View Project</span>
                     </a>
                   </div>
@@ -241,7 +241,7 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="ca" title="View Project" target="_blank">
+                    <a href="https://github.com/abrarrhine/TextbookBuddies" title="View Project" target="_blank" rel="noreferrer">
                       <span>View Project</span>
                     </a>
                   </div>
