@@ -184,14 +184,8 @@ function Service() {
                     <div className="card-text">
                       <span className="card-title">IOP Asset Tracker</span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Led a team of 5 students in building an NLP model to
+                        classify texts based on topics for a federal contractor.
                       </p>
                       <div className="tool-icons">
                         <img
@@ -288,14 +282,8 @@ function Service() {
                     <div className="card-text">
                       <span className="card-title">Textbook Buddies :)</span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Built a textbook trading android app for Virginia Tech
+                        students using Android Studio (Java) with a team.
                       </p>
                       <div className="tool-icons">
                         <img

@@ -6,6 +6,10 @@ h1.heading {
   margin-bottom: 20px;
 }
 
+.card-link a span{
+  font-size: 20pt !important;
+}
+
 .project-heading{
   display: flex;
   justify-content: center;
