@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Service.css";
 import traffic_sign_recognizer from "../img/traffic_sign_recognizer.JPG";
@@ -16,6 +17,7 @@ import aws_logo from "../img/Amazon-Web-Services-AWS-Logo.png";
 import android_logo from "../img/Android-Logo.png"; 
 import as_logo from "../img/Android_Studio_Icon_3.6.svg.png";
 import kotlin_logo from "../img/Kotlin_Icon.svg.png"; 
+import capstone_poster from "../img/Capstone_Project_Poster.png"; 
 
 function Service() {
   return (
@@ -23,9 +25,9 @@ function Service() {
       <div className="projects_bg">
         <div className="experience-bg-overlay"></div>
         <div className="container">
-          <div className="project-heading">
-            <h1 className="heading sweet project-header"> My Projects</h1>
-          </div>
+          {/* <div className="project-heading">
+            <h1 className="heading sweet project-header"> Engineering Projects</h1>
+          </div> */}
 
           <div className="card-category-2">
             <br />
@@ -62,8 +64,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href="#" title="View Project">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>
@@ -97,8 +99,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href="#" title="View Project">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>
@@ -134,8 +136,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href="#" title="View Project">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>
@@ -169,8 +171,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href={capstone_poster} title="View Project" target="_blank" rel="noreferrer">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>
@@ -204,8 +206,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href="https://github.com/abrarrhine/FancyGallery" title="View Project" target="_blank" rel="noreferrer">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>
@@ -239,8 +241,8 @@ function Service() {
                   </div>
 
                   <div className="card-link">
-                    <a href="#" title="Read Full">
-                      <span>Read Full</span>
+                    <a href="ca" title="View Project" target="_blank">
+                      <span>View Project</span>
                     </a>
                   </div>
                 </div>

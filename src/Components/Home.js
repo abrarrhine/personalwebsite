@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
@@ -86,20 +88,19 @@ function Home() {
               ></img>
               <h3 className="home__text red_text"> Raytheon Technologies </h3>
             </div>
-            {/* <h3 className="home__text sweet px_20">Certifications:</h3> */}
             <div className="badges_container">
               <a>
-                <img src={devcert} className="certification"></img>
+                <img src={devcert} className="certification" alt="certification" ></img>
               </a>
               <a>
-                <img src={mlcert} className="certification"></img>
-              </a>
-              {/* <a>
-                <img src={google_ml_cert} className="certification"></img>
+                <img src={mlcert} className="certification" alt="certification"></img>
               </a>
               <a>
-                <img src={tf_cert} className="certification"></img>
-              </a> */}
+                <img src={google_ml_cert} className="certification" alt="certification"></img>
+              </a>
+              <a>
+                <img src={tf_cert} className="certification" alt="certification"></img>
+              </a>
             </div>
           </div>
         </div>

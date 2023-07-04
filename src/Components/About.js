@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./About.css";
 import about__img from "../img/gradpic_pylons22.jpeg";
@@ -15,47 +16,32 @@ function About() {
               <h1 className="about__heading sweet">About Me</h1>
               <div className=".about__meta">
                 <p className="about__text p__color">
-                  Greetings! I am Abrar Rhine, a software engineering
-                  professional. I completed my Bachelor of Science degree in
-                  Computer Science in May 2022 and further advanced my education
-                  by earning a Master of Engineering degree in Computer Science
-                  in May 2023, both from Virginia Tech.
+                  Greetings! I'm Abrar Rhine, a passionate Software Engineer,
+                  holding a BSc and MEng degree in Computer Science from
+                  Virginia Tech. I commenced my professional journey at Raytheon
+                  Technologies as an Intern, paving the way for a full-fledged
+                  role as a Software Developer at Systems Planning and Analysis
+                  Inc. I now hold the title of Sr. Software Development Engineer
+                  at Raytheon Technologies, leveraging my academic foundation
+                  and industry experience to drive innovative software
+                  solutions.
                 </p>
+
                 <p className="about__text p__color">
-                  My coursework includes Advanced Machine Learning, Artificial
-                  Intelligence, Natural Language Processing, Software
-                  Engineering, Mobile Application Development, Web Application
-                  Development, Theory of Algorithms, Computer Systems etc.
+                  With AWS certifications in Associate Developer and Machine
+                  Learning Specialty, I'm adept at building, training, tuning,
+                  and deploying ML models. My educational background encompasses
+                  Advanced Machine Learning, AI, and Natural Language
+                  Processing, coupled with practical experience in diverse
+                  software development projects.
                 </p>
-                <p className="about__text p__color">
-                  My professional journey began as an Intern at Raytheon
-                  Technologies where I got an opportunity to hone my technical
-                  skills and understand the practical implications of my
-                  theoretical knowledge. This experience served as a foundation
-                  for my role as a Software Developer at Systems Planning and
-                  Analysis Inc., where I could broaden my expertise and
-                  contribute to diverse software development projects.
-                </p>
-                <p className="about__text p__color">
-                  Currently, I hold the position of Sr. Software Development
-                  Engineer at Raytheon Technologies. In this role, I am able to
-                  fully leverage my strong academic foundation and extensive
-                  industry experience to drive innovative solutions, delivering
-                  high-quality software.
-                </p>
-                <p className="about__text p__color">
-                  I have two AWS certifications:{" "}
-                  <strong>Associate Developer</strong> and{" "}
-                  <strong> Machine Learning Specialty</strong>. I am capable of
-                  building, training, tuning, and deploying machine learning
-                  (ML) models on AWS. Besides, I have worked on various machine
-                  learning projects which validates my expertise in this field.
-                </p>
+
                 <div className="about__button d__flex align__items__center">
                   <a
                     className="about resumebutton pointer"
                     href={resume}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View/Download My Resume
                   </a>
