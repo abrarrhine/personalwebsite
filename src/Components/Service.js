@@ -88,14 +88,8 @@ function Service() {
                     <div className="card-text">
                       <span className="card-title">Online Bookstore</span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Built a full-stack web application where users can explore various
+                        kinds of books and place orders.
                       </p>
                       <div className="tool-icons">
                         <img
@@ -230,14 +224,8 @@ function Service() {
                     <div className="card-text">
                       <span className="card-title">Fancy Gallery</span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Image by{" "}
-                        <a
-                          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3461451"
-                          style={{ color: "#795548" }}
-                        >
-                          Pixabay
-                        </a>
+                        Developed a photo gallery android app which loads
+                        network images into a grid & display map tiles.
                       </p>
                       <div className="tool-icons">
                         <img

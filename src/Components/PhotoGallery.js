@@ -56,7 +56,10 @@ const PhotoGallery = () => {
   return (
     <div className="gallery__space">
       <div className="quotes-div">
-        <div className="quote"> "Ya'll call it a moment, I call it life" - Mr. Worldwide </div>
+        <div className="quote">
+          {" "}
+          "Ya'll call it a moment, I call it life" - Mr. Worldwide{" "}
+        </div>
       </div>
       <div className="gallery" id="gallery" ref={galleryRef}>
         {images.map((imageName, i) => (
@@ -69,7 +72,8 @@ const PhotoGallery = () => {
       </div>
       <div className="quotes-div-bottom">
         <div className="quote">
-        "I put my heart and soul into my work, and I have lost my mind in the process." - Vincent Van Gogh
+          “What I like about photographs is that they capture a moment that's
+          gone forever, impossible to reproduce.” - Karl Lagerfeld
         </div>
       </div>
     </div>
