@@ -1,5 +1,4 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 import "./Experience.css";
 import rtxlogo from "../img/rt_logo_300.webp";
 import vtlogo from "../img/virginia_tech.png";

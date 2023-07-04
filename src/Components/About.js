@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./About.css";
-import about__img from "../img/gradpic_pylons22.jpeg";
+// import about__img from "../img/gradpic_pylons22.jpeg";
 import resume from "../img/Abrar_Rhine_resume.pdf";
 import resume_icon from "../img/cv.png";
 import pr_photo from "../img/Abrar-15.jpeg";

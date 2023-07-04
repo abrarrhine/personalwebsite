@@ -4,20 +4,6 @@ import "./Artwork.css";
 function Artwork() {
   const galleryRef = useRef(null);
 
-  const getVal = (elem, style) =>
-    parseInt(window.getComputedStyle(elem).getPropertyValue(style));
-  const getHeight = (item) =>
-    item.querySelector(".content").getBoundingClientRect().height;
-
-  const resizeAll = () => {
-    const altura = getVal(galleryRef.current, "grid-auto-rows");
-    const gap = getVal(galleryRef.current, "grid-row-gap");
-    galleryRef.current.querySelectorAll(".gallery-item").forEach((item) => {
-      item.style.gridRowEnd =
-        "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-  };
-
   const toggleFull = (event) => {
     event.currentTarget.classList.toggle("full");
     event.currentTarget.classList.contains("full")
@@ -26,6 +12,22 @@ function Artwork() {
   };
 
   useEffect(() => {
+    const getVal = (elem, style) =>
+      parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+    const getHeight = (item) =>
+      item.querySelector(".content").getBoundingClientRect().height;
+
+    const resizeAll = () => {
+      const altura = getVal(galleryRef.current, "grid-auto-rows");
+      const gap = getVal(galleryRef.current, "grid-row-gap");
+      galleryRef.current.querySelectorAll(".gallery-item").forEach((item) => {
+        item.style.gridRowEnd =
+          "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+      });
+    };
+
+    resizeAll();
+
     window.addEventListener("resize", resizeAll);
     galleryRef.current.querySelectorAll(".gallery-item").forEach((item) => {
       item.addEventListener("click", toggleFull);
@@ -47,9 +49,8 @@ function Artwork() {
       }
     });
 
-    resizeAll();
     return () => window.removeEventListener("resize", resizeAll);
-  }, []);
+  }, []); 
 
   const images = Array.from({ length: 11 }, (_, i) => `Painting-${i + 1}.jpeg`);
 
