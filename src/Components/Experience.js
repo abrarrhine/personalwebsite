@@ -3,7 +3,7 @@ import "./Experience.css";
 import rtxlogo from "../img/rt_logo_300.webp";
 import vtlogo from "../img/virginia_tech.png";
 import spalogo from "../img/spalogo.png";
-import spdlimit from "../img/nospeedlimit.PNG";
+import spdlimit from "../img/nospeedlimit.png";
 
 function Experience() {
   const accentColorStyleBlue = {

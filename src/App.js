@@ -12,10 +12,10 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home> }></Route>
-        <Route path="/experience" element={<Experience></Experience> }></Route>
-        <Route path="/projects" element={<Service></Service> }></Route>
-        <Route path="/artworks" element={<Artwork></Artwork> }></Route>
-        <Route path="/photos" element={<PhotoGallery></PhotoGallery> }></Route>
+        <Route path="/experience/" element={<Experience></Experience> }></Route>
+        <Route path="/projects/" element={<Service></Service> }></Route>
+        <Route path="/artworks/" element={<Artwork></Artwork> }></Route>
+        <Route path="/photos/" element={<PhotoGallery></PhotoGallery> }></Route>
       </Routes>
     </div>
   );

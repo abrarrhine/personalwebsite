@@ -1,15 +1,13 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
-import pic from "../img/suitpic2.jpeg";
+import pic from "../img/ClassPhoto.jpeg";
 import About from "./About";
 import Contact from "./Contact";
 import devcert from "../img/AWS-Certified-Developer.png";
 import mlcert from "../img/AWS-Certified-Machine-Learning-Specialty_badge.png";
 import google_ml_cert from "../img/google_ml_cert.png";
-import tf_cert from "../img/tensorflow_cert_logo.png";
+import tf_cert from "../img/tfcert.PNG";
 import Footer from "./Footer";
 import Particlesbg from "./Particlejs";
 import gradicon from "../img/graduate.png";
@@ -25,7 +23,10 @@ function Home() {
         <div className="container pixhundred">
           <Particlesbg></Particlesbg>
           <div>
-            <img src={pic} className="suitpic" alt="Profile Photo"></img>
+            <img
+              src={require("../img/ClassPhoto.jpeg")}
+              className="suitpic"
+              alt="Profile Photo"/>
           </div>
           <div className="home__content">
             <div className="home__meta">
@@ -90,16 +91,32 @@ function Home() {
             </div>
             <div className="badges_container">
               <a>
-                <img src={devcert} className="certification" alt="certification" ></img>
+                <img
+                  src={devcert}
+                  className="certification"
+                  alt="certification"
+                ></img>
               </a>
               <a>
-                <img src={mlcert} className="certification" alt="certification"></img>
+                <img
+                  src={mlcert}
+                  className="certification"
+                  alt="certification"
+                ></img>
               </a>
               <a>
-                <img src={google_ml_cert} className="certification" alt="certification"></img>
+                <img
+                  src={google_ml_cert}
+                  className="certification"
+                  alt="certification"
+                ></img>
               </a>
               <a>
-                <img src={tf_cert} className="certification" alt="certification"></img>
+                <img
+                  src={tf_cert}
+                  className="certification"
+                  alt="certification"
+                ></img>
               </a>
             </div>
           </div>

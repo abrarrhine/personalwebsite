@@ -50,7 +50,7 @@ const PhotoGallery = () => {
     });
 
     return () => window.removeEventListener("resize", resizeAll);
-  }, []); // Remove 'resizeAll' from the dependencies array
+  }, []); 
 
 
   const images = Array.from({ length: 49 }, (_, i) => `Abrar-${i + 1}.jpeg`);
@@ -64,7 +64,8 @@ const PhotoGallery = () => {
         </div>
       </div>
       <div className="gallery" id="gallery" ref={galleryRef}>
-        {images.map((imageName, i) => (
+        {images.map((imageName, i) => ( 
+          
           <div className="gallery-item" key={i}>
             <div className="content">
               <img src={require(`../img/${imageName}`)} alt={imageName} />

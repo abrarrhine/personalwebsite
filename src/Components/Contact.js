@@ -1,6 +1,13 @@
 import React from "react";
 import "./Contact.css";
 import contactimg from "../img/ben_on_bench.JPG";
+import twtr_icon from "../img/twittericon.png"; 
+import yt_icon from "../img/yputubeicon.png"; 
+import discord_icon from "../img/discordicon.png"; 
+import gmail_icon from "../img/gmailicon.png"; 
+import lin_icon from "../img/linkedinIcon.png"; 
+import github_icon from "../img/githubicon.png"; 
+
 function Contact() {
   return (
     <div className="contact component__space" id="contact">
@@ -40,6 +47,9 @@ function Contact() {
               <button className="submit_btn contact pointer" type="submit">
                 Submit
               </button>
+            </div>
+            <div className="social-media">
+
             </div>
           </div>
           <div className="col__2">
